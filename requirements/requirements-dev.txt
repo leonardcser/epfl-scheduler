@@ -16,4 +16,4 @@ pre-commit>=2.20.0,<2.30
 # Requirements
 schedule>=1.1.0,<1.2
 python-dotenv>=0.21.0,<0.30
-git+https://github.com/leonardcser/selenium-scheduler@main##egg=selenium_scheduler
+git+https://github.com/leonardcser/selenium-scheduler
