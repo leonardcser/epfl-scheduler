@@ -11,5 +11,5 @@ Using https://github.com/leonardcser/selenium-scheduler
 ## Installation
 
 ```sh
-selenium_scheduler install -e main.py -r requirements/requirements.txt -env .env
+selenium_scheduler install -e main.py -r requirements/requirements.txt -m runners -env .env
 ```
