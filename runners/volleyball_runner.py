@@ -95,7 +95,7 @@ class VolleyballRunner(BaseRunner):
                         "VolleyballRunner: Sucessfully booked next lesson!"
                     )
                     return
-        logger.error("VolleyballRunner: Cound not find next date...")
+        logger.error("VolleyballRunner: Could not find next date...")
 
     def run(self) -> None:
         self._login()

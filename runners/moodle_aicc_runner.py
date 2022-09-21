@@ -53,7 +53,7 @@ class MoodleAICCRunner(BaseRunner):
         if found:
             logger.info("MoodleAICCRunner: Successfully booked room!")
         else:
-            logger.error("MoodleAICCRunner: Cound not book room...")
+            logger.error("MoodleAICCRunner: Could not book room...")
 
     def run(self) -> None:
         self._login()
