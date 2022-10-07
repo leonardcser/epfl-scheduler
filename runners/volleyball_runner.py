@@ -30,7 +30,7 @@ class VolleyballRunner(BaseRunner):
     # Custom params
     wd_wait_time = 5
     day_of_week = "Vendredi"
-    hour_interval = "17:30-19:00"
+    hour_interval = "17:30–19:00"
 
     def _close_banner(self) -> None:
         with contextlib.suppress(TimeoutException):
@@ -63,9 +63,9 @@ class VolleyballRunner(BaseRunner):
             )
         )
         for it in items:
-            day = it.find_element(By.CLASS_NAME, "day").text
-            date = it.find_element(By.CLASS_NAME, "dt").text
-            hour = it.find_element(By.CLASS_NAME, "hour").text
+            day = it.find_element(By.CLASS_NAME, "day").text.strip()
+            date = it.find_element(By.CLASS_NAME, "dt").text.strip()
+            hour = it.find_element(By.CLASS_NAME, "hour").text.strip()
             if (
                 day == self.day_of_week
                 and date == next_date

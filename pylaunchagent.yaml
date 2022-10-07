@@ -1,0 +1,10 @@
+entrypoint: "main.py"
+requirements: "./requirements/requirements.txt"
+modules:
+    - "runners"
+files:
+    - ".env"
+logs_filename: "logs.log"
+options:
+    keep_alive: true
+    run_at_load: true
