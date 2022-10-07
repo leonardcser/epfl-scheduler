@@ -6,10 +6,16 @@
 
 ## About
 
-Using https://github.com/leonardcser/selenium-scheduler
+Using
+
+-   https://github.com/leonardcser/selenium-scheduler
+-   https://github.com/leonardcser/pylaunchagent
 
 ## Installation
 
 ```sh
-selenium_scheduler install -e main.py -r requirements/requirements.txt -m runners -env .env
+git clone https://github.com/leonardcser/epfl-scheduler
+cd epfl-scheduler
+touch .env # Add secrets here
+pylaunchagent install
 ```
